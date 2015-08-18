@@ -1,0 +1,5 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "e497eeb9354c0d626ae7b6155660d328"
+inputs: 
+- "/Users/nyudina/Developer/UserDefinedLabel/UserDefinedLabel/ViewController.swift"
+- "/Users/nyudina/Developer/UserDefinedLabel/UserDefinedLabel/AppDelegate.swift"

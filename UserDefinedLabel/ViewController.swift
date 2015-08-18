@@ -10,16 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel?
+    private let labelTextKey = "LABEL_TEXT"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        if let settings = NSBundle.mainBundle().infoDictionary as? [String: AnyObject] {
+            if let setting = settings[labelTextKey] as? String {
+                if let label = self.label {
+                    label.text = setting
+                }
+            }
+        }
+
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
